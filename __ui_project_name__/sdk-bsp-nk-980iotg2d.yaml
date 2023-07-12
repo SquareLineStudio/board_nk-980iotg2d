@@ -1,0 +1,111 @@
+board:
+  buy_url_cn: https://direct.nuvoton.com/en/numaker-iiot-nuc980g2d
+  buy_url_global: https://direct.nuvoton.com/en/numaker-iiot-nuc980g2d
+  debug_interface: JTAG
+  debugger: J-LINK
+  description_en: Nuvoton Technology provides industrial IoT development platform using NUC980DK71YC microprocessor,
+   which is an industrial IoT open platform, including complete hardware design and software reference design.
+   The platform is powered by Nuvoton ARM9 MPU with a 300 MHz internal speed and 128 MB DDR memory, 
+   single 10/100 Ethernet port, 2 high-speed USB hosts, 1 Gb SPI NAND Flash memory, microphone input, 
+   4 CAN interfaces, stereo headphone output and Arduino compatible interface.
+  description_zh: 新唐科技提供工业物联网开发平台采用 NUC980DK71YC 微处理器，此为一套完整的工业用物联网开平台，包含了完整的硬件设计与软件参考设计。内核为新唐执行速度 300 MHz 的 ARM9 MPU，内建 128 MB DDR 内存、单一 10/100 以太网口、2 个高速 USB 主机、1 Gb SPI NAND Flash、4个 CAN 接口、麦克风输入、立体声耳机输出与 Arduino 兼容接口。
+  emulator_machine: ''
+  large_image: documents/images/large.png
+  name: NK-980IOTG2D
+  price_cn: 355 CNY
+  price_global: 55 USD
+  sale_contact_cn: https://www.nuvoton.com
+  sale_contact_global: https://www.nuvoton.com
+  small_image: documents/images/small.png
+  vendor: Nuvoton
+  version: v1.0
+chip:
+  chip_name: NUC980DK71YC
+  clock_source: HXT
+  device_vendor: Nuvoton
+  family_name: NuMicro
+  rx_name: PF11
+  series_name: NUC980
+  source_freq: '12000000'
+  sub_series_name: NUC980
+  target_freq: '300000000'
+  tx_name: PF12
+  uart_name: UART0
+docs: []
+example_projects: []
+features:
+- 32-bit ARM926EJ-STM NUC980DK71YC microprocessor core
+- Microprocessor built-in 128 MB DDR memory
+- Operating frequencies up to 300 MHz
+- 1 Gbit SPI-NAND Flash
+- 10 / 100 Ethernet x 1
+- USB 2.0 High Speed Host x 1
+- USB 2.0 High Speed Host / Device x 1
+- Mono microphone input
+- Stereo headphone output
+- MicroSD card slot
+- USB Power and CDC Debug Port
+- External memory expansion interface
+- Arduino compatible interface
+- UART x 3 
+features_zh:
+- 32-bit ARM926EJ-STM NUC980DK71YC microprocessor core
+- Microprocessor built-in 128 MB DDR memory
+- Operating frequencies up to 300 MHz
+- 1 Gbit SPI-NAND Flash
+- 10 / 100 Ethernet x 1
+- USB 2.0 High Speed Host x 1
+- USB 2.0 High Speed Host / Device x 1
+- Mono microphone input
+- Stereo headphone output
+- MicroSD card slot
+- USB Power and CDC Debug Port
+- External memory expansion interface
+- Arduino compatible interface
+- UART x 3 
+pkg_type: Board_Support_Packages
+pkg_vendor: Nuvoton
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .settings
+    - .cproject
+    - .config
+    - .project
+    - SConstruct
+    - linking_scripts
+    - rtconfig_preinc.h
+    - Kconfig
+    - applications
+    - makefile.targets
+    - board
+    - uboot
+    - packages
+    - rtconfig.h
+    - SConscript
+    - libraries
+    - rt-thread
+    - rtconfig.py
+    - template.uvproj
+    source_path_offset: ''
+    target_path_offset: ''
+  external_files:
+  - package_type: ToolChain_Support_Packages
+    package_name: GNU_Tools_for_ARM_Embedded_Processors
+    package_vendor: 'ARM'
+    package_version: 10.2.1
+    source_path_offset: ''
+    target_path_offset: ''
+    files_and_folders: []    
+  - package_type: Debugger_Support_Packages
+    package_name: J-Link
+    package_vendor: 'SEGGER'
+    package_version: 6.80d2
+    source_path_offset: ''
+    target_path_offset: ''
+    files_and_folders: []
+  project_description: ''
+  project_name: nk-980iotg2d
+  project_type: rt-thread|@full|@notUsed
+yaml_version: 3
